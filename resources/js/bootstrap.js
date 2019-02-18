@@ -11,7 +11,34 @@ try {
     window.Popper = require('popper.js').default;
     window.$ = window.jQuery = require('jquery');
 
-    require('bootstrap');
+    require('bootstrap-sass');
+       /** Select Plugin Js **/
+       require('adminbsb-materialdesign/plugins/bootstrap-select/js/bootstrap-select.js');
+       /** Slimscroll Plugin Js **/
+       require('adminbsb-materialdesign/plugins/jquery-slimscroll/jquery.slimscroll');
+       /** Waves Effect Plugin Js **/
+       window.Waves= require('adminbsb-materialdesign/plugins/node-waves/waves.js');
+       /** Jquery CountTo Plugin Js **/
+       require('adminbsb-materialdesign/plugins/jquery-countto/jquery.countTo.js');
+       /** Morris Plugin Js **/
+       window.Raphael= require('adminbsb-materialdesign/plugins/raphael/raphael.min.js');
+     /**/
+    require('adminbsb-materialdesign/plugins/morrisjs/morris.js');
+       /** ChartJs **/
+    require('adminbsb-materialdesign/plugins/chartjs/Chart.bundle.js');
+       /** Flot Charts Plugin Js **/
+    require('adminbsb-materialdesign/plugins/flot-charts/jquery.flot.js');
+    require('adminbsb-materialdesign/plugins/flot-charts/jquery.flot.resize.js');
+    require('adminbsb-materialdesign/plugins/flot-charts/jquery.flot.pie.js');
+    require('adminbsb-materialdesign/plugins/flot-charts/jquery.flot.categories.js');
+    require('adminbsb-materialdesign/plugins/flot-charts/jquery.flot.time.js');
+       /** Sparkline Chart Plugin Js **/
+    require('adminbsb-materialdesign/plugins/jquery-sparkline/jquery.sparkline.js');
+       /** Custom Js **/
+    require('adminbsb-materialdesign/js/admin.js');
+    require('adminbsb-materialdesign/js/pages/index.js');
+       /** Demo Js **/
+    require('adminbsb-materialdesign/js/demo.js');
 } catch (e) {}
 
 /**

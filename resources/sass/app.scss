@@ -3,10 +3,26 @@
 @import url('https://fonts.googleapis.com/css?family=Nunito');
 
 // Variables
-@import 'variables';
+// @import 'variables';
 
 // Bootstrap
-@import '~bootstrap/scss/bootstrap';
+// @import '~bootstrap/scss/bootstrap';
+// <!-- Bootstrap Core Css -->
+   @import "~bootstrap-sass/assets/stylesheets/bootstrap";
+   // <!-- Custom Css -->
+   @import '~adminbsb-materialdesign/scss/style';
+   // <!-- Waves Effect Css -->
+   @import '~adminbsb-materialdesign/plugins/node-waves/waves';
+
+   // <!-- Animation Css -->
+   @import '~adminbsb-materialdesign/plugins/animate-css/animate';
+
+   // <!-- Morris Chart Css-->
+   @import '~adminbsb-materialdesign/plugins/morrisjs/morris';
+
+   // <!-- AdminBSB Themes. You can choose a theme from css/themes instead of get all themes -->
+   @import '~adminbsb-materialdesign/css/themes/all-themes';
+   @import '~adminbsb-materialdesign/css/materialize';
 
 .navbar-laravel {
   background-color: #fff;
