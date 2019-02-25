@@ -3,7 +3,7 @@
 
 <head>
     @yield('library')
-    
+
     @yield('head')
 
     <!-- CSRF Token
@@ -16,6 +16,9 @@ npm install --save toastr
 </head>
 
 <body class="grey  lighten-2  fixed-sn mdb-skin theme-indigo">
+<div id="app">
+
+
   <!-- Page Loader -->
   <div class="page-loader-wrapper">
       <div class="loader">
@@ -29,10 +32,24 @@ npm install --save toastr
                   </div>
               </div>
           </div>
-          <p>Please wait...</p>
+          <p>Espere Por Favor...</p>
       </div>
   </div>
   <!-- #END# Page Loader -->
+  <!-- Overlay For Sidebars -->
+  <div class="overlay"></div>
+  <!-- #END# Overlay For Sidebars -->
+  <!-- Search Bar -->
+  <div class="search-bar">
+      <div class="search-icon">
+          <i class="material-icons">search</i>
+      </div>
+      <input type="text" placeholder="BUSCAR...">
+      <div class="close-search">
+          <i class="material-icons">close</i>
+      </div>
+  </div>
+  <!-- #END# Search Bar -->
     @yield('alert')
     @yield('navbar')
 
@@ -40,6 +57,7 @@ npm install --save toastr
         <!-- main -->
         <!--Main layout-->
         <main>
+
             @if ($errors->any())
             <div class="alert alert-danger">
                 <ul>
@@ -50,33 +68,44 @@ npm install --save toastr
             </div>
             @endif {!! Alert::render() !!}
             <!--Error message-->
-            <div class="container card cascading-admin-card " style="width:100%; height:100%;">
+            <section class="content">
+
                 @yield('content')
-                <br>
-                <br>
-            </div>
+
+
+
+            </section>
+
         </main>
+        </div>
         <!-- /main -->
-    </div>
-    <!-- FOOTER -->
-    @yield('footer')
-    <!-- /FOOTER -->
-    <!-- SCRIPTS -->
-    <!-- Scripts -->
-    <script src="{{ asset('js/app.js') }}" defer></script>
+        <!-- FOOTER -->
+        @yield('footer')
+        <!-- /FOOTER -->
+        <!-- SCRIPTS -->
+        <!-- Scripts -->
 
-    	<script src="https://code.jquery.com/jquery-1.11.3.js"></script>
+        <script src="{{ asset('js/app.js') }}" defer></script>
+        <script src="js/toastr.min.js" defer></script>
 
-<script type="text/javascript">
-$(function() {
-    console.log( "ready!" );
-    toastr.error("ready!" );
-    $('#element').toast('show')
-});
+        	<!-- <script src="https://code.jquery.com/jquery-1.11.3.js"></script> -->
+        	<!-- <script src="https://raw.githubusercontent.com/CodeSeven/toastr/master/build/toastr.min.js"></script> -->
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
-</script>
+    <script type="text/javascript">
+    $(function() {
+        console.log( "ready!" );
+        toastr.error('Are you the 6 fingered man?');
+        // $('#element').toast('show')
+    });
 
-    @yield('script')
+    </script>
+
+        @yield('script')
+
+
+
+
 </body>
 @if ($errors->any())
 <div class="alert alert-danger">

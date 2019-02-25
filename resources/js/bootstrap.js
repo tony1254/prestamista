@@ -11,6 +11,8 @@ try {
     window.Popper = require('popper.js').default;
     window.$ = window.jQuery = require('jquery');
 
+    require('jquery/dist/jquery.js');
+    require('toastr/build/toastr.min.js');
     require('bootstrap-sass');
        /** Select Plugin Js **/
        require('adminbsb-materialdesign/plugins/bootstrap-select/js/bootstrap-select.js');
@@ -39,6 +41,7 @@ try {
     require('adminbsb-materialdesign/js/pages/index.js');
        /** Demo Js **/
     require('adminbsb-materialdesign/js/demo.js');
+
 } catch (e) {}
 
 /**

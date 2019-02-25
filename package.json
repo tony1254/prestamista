@@ -25,6 +25,7 @@
   },
   "dependencies": {
     "adminbsb-materialdesign": "^1.0.7",
-    "node-sass": "^4.9.0"
+    "node-sass": "^4.9.0",
+    "toastr": "^2.1.4"
   }
 }

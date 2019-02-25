@@ -1,20 +1,6 @@
 @section('navbar')
-<!-- Overlay For Sidebars -->
-<div class="overlay"></div>
-<!-- #END# Overlay For Sidebars -->
-<!-- Search Bar -->
-<div class="search-bar">
-    <div class="search-icon">
-        <i class="material-icons">search</i>
-    </div>
-    <input type="text" placeholder="BUSCAR...">
-    <div class="close-search">
-        <i class="material-icons">close</i>
-    </div>
-</div>
-<!-- #END# Search Bar -->
 <!-- Top Bar -->
-<br><br>
+
 <nav class="navbar">
     <div class="container-fluid">
         <div class="navbar-header">
@@ -228,12 +214,10 @@
     </div>
 </nav>
 <!-- #Top Bar -->
-@if(Auth::check())
 <section>
+@if(Auth::check())
   @yield('leftsidebar')
   @yield('rightsidebar')
-</section>
 @endif
-
-
+</section>
 @endsection

@@ -27,6 +27,13 @@
 <meta name="theme-color" content="#3f51b5">
 <link rel="stylesheet" href="/fonts/iconfont/material-icons.css">
   <link href="{{ mix('/css/app.css') }}" rel="stylesheet">
+  <link href="css/toastr.min.css" rel="stylesheet">
+
+
+
+  <!-- <link rel="stylesheet" href="https://raw.githubusercontent.com/CodeSeven/toastr/master/build/toastr.min.css"> -->
+
+
 
   <!--  estilos modificados -->
   <STYLE TYPE="text/css" MEDIA=screen>
