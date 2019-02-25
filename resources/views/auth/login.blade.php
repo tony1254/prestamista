@@ -1,11 +1,39 @@
-@extends('layouts.app')
-
-@section('content')
 
 
+<!DOCTYPE html>
+<html>
 
-       <div class="card">
-           <div class="body">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <title>{{ config('app.name', 'Laravel') }}</title>
+
+    <!-- Google Fonts -->
+      <!-- <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&subset=latin,cyrillic-ext" rel="stylesheet" type="text/css"> -->
+      <!-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" type="text/css"> -->
+      <link rel="stylesheet" href="/fonts/iconfont/material-icons.css">
+
+      <link href="{{ mix('/css/app.css') }}" rel="stylesheet">
+
+    <!-- CSRF Token -->
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+
+
+    <!-- Scripts -->
+    <!-- <script src="{{ asset('js/app.js') }}" defer></script> -->
+
+    <!-- Fonts -->
+    <!-- <link rel="dns-prefetch" href="//fonts.gstatic.com"> -->
+    <!-- <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet" type="text/css"> -->
+
+    <!-- Styles -->
+    <!-- <link href="{{ asset('css/app.css') }}" rel="stylesheet"> -->
+</head>
+
+<body class="login-page  bg-indigo">
+    <div class="login-box">
+            <div class="card">
+                        <div class="body">
                <form id="sign_in" method="POST" action="{{ route('login') }}">
                  @csrf
 
@@ -71,7 +99,6 @@
        </div>
    </div>
 
+</body>
 
-
-
-@endsection
+</html>

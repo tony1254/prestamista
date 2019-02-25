@@ -174,6 +174,10 @@ return [
         // App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
+        /*
+        alertas de styde
+        */
+        Styde\Html\HtmlServiceProvider::class,
 
     ],
 

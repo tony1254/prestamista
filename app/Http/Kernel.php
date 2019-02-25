@@ -19,6 +19,11 @@ class Kernel extends HttpKernel
         \App\Http\Middleware\TrimStrings::class,
         \Illuminate\Foundation\Http\Middleware\ConvertEmptyStringsToNull::class,
         \App\Http\Middleware\TrustProxies::class,
+        /*
+        alertas de styde
+        */
+        \Styde\Html\Alert\Middleware::class,
+        \App\Http\Middleware\EncryptCookies::class,
     ];
 
     /**
