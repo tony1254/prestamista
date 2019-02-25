@@ -12,7 +12,24 @@
                                         <div class="card">
                                             <div class="header">
                                                 <h2>
-                                                    BASIC TABLES
+                                                    BASIC TABLESs
+                                                    <div class="alert alert-success" role="alert">...</div>
+                                                    <div class="alert alert-danger" role="alert">
+                                                      This is a primary alert—check it out!
+                                                    </div>
+                                                    <div class="dropup">
+  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Dropup
+    <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+    <li><a href="#">Action</a></li>
+    <li><a href="#">Another action</a></li>
+    <li><a href="#">Something else here</a></li>
+    <li role="separator" class="divider"></li>
+    <li><a href="#">Separated link</a></li>
+  </ul>
+</div>
                                                     <small>Basic example without any additional modification classes</small>
                                                     @if (session('status'))
                                                         <div class="alert alert-success" role="alert">

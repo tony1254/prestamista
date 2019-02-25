@@ -14,14 +14,19 @@
 </div>
 <!-- #END# Search Bar -->
 <!-- Top Bar -->
+<br><br>
 <nav class="navbar">
     <div class="container-fluid">
         <div class="navbar-header">
             <a href="javascript:void(0);" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false"></a>
             <a href="javascript:void(0);" class="bars"></a>
 
-            <a  class="navbar-brand" href="../../../index.html">
-            BUFETE</a>
+            <a  class="navbar-brand waves-effect waves-light " href="{{ route('home') }}">
+              <img  class="logoImage" src="{{url("/content/T.png")}}" style="">
+            </a>
+            <a  class="navbar-brand-text waves-effect waves-light " href="{{ route('home') }}">
+              Bufete
+            </a>
 
 
         </div>

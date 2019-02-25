@@ -25,7 +25,50 @@
 <meta name="msapplication-TileColor" content="#3f51b5">
 <meta name="msapplication-TileImage" content="{{url("/content/favicon/ms-icon-144x144.png")}}">
 <meta name="theme-color" content="#3f51b5">
+<link rel="stylesheet" href="/fonts/iconfont/material-icons.css">
+  <link href="{{ mix('/css/app.css') }}" rel="stylesheet">
 
+  <!--  estilos modificados -->
+  <STYLE TYPE="text/css" MEDIA=screen>
+  /* 760 */
+  .navbar-brand > img.logoImage  {
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-top: -12px;
+    margin-left: 15px;
+  }
+  .navbar-brand-text{
+    color:rgb(255, 255, 255);
+    font-family:Roboto, sans-serif;
+    float: left;
+    height: 50px;
+    padding: 15px 15px;
+    font-size: 18px;
+    line-height: 20px;
+  }
+  .navbar-brand-text:hover{
+  color:rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+  @media only screen and (max-width: 760px) {
+    .navbar-brand > img.logoImage {
+    margin-left: 45%;
+    }
+    .navbar-brand-text{
+    display: none;
+    }
+  }
+
+    @media only screen and (max-width: 280px) {
+      .navbar-brand > img.logoImage {
+      margin-left: 30%;
+      }
+    }
+
+  </style>
 
 </head>
 

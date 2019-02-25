@@ -3,10 +3,9 @@
 
 <head>
     @yield('library')
-    <link rel="stylesheet" href="/fonts/iconfont/material-icons.css">
-
+    
     @yield('head')
-        <link href="{{ mix('/css/app.css') }}" rel="stylesheet">
+
     <!-- CSRF Token
 npm install --save toastr
    -->
