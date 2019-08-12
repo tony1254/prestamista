@@ -13,7 +13,7 @@
 
     export default {
         mounted() {
-          // toastr.error('Are you the 6 fingered man?');
+           toastr.error('esto es ?');
             console.log('Component mounted.')
         }
     }

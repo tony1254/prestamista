@@ -75615,10 +75615,7 @@ window._ = __webpack_require__(/*! lodash */ "./node_modules/lodash/lodash.js");
  */
 
 try {
-  window.Popper = __webpack_require__(/*! popper.js */ "./node_modules/popper.js/dist/esm/popper.js").default;
-  window.$ = window.jQuery = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
-
-  __webpack_require__(/*! jquery/dist/jquery.js */ "./node_modules/jquery/dist/jquery.js");
+  window.$ = window.jQuery = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js"); // require('jquery/dist/jquery.js');
 
   __webpack_require__(/*! toastr/build/toastr.min.js */ "./node_modules/toastr/build/toastr.min.js");
 
@@ -75638,10 +75635,10 @@ try {
   /** Jquery CountTo Plugin Js **/
 
   __webpack_require__(/*! adminbsb-materialdesign/plugins/jquery-countto/jquery.countTo.js */ "./node_modules/adminbsb-materialdesign/plugins/jquery-countto/jquery.countTo.js");
-  /** Morris Plugin Js **/
-
 
   window.Raphael = __webpack_require__(/*! adminbsb-materialdesign/plugins/raphael/raphael.min.js */ "./node_modules/adminbsb-materialdesign/plugins/raphael/raphael.min.js");
+  /** Morris Plugin Js **/
+
   /**/
 
   __webpack_require__(/*! adminbsb-materialdesign/plugins/morrisjs/morris.js */ "./node_modules/adminbsb-materialdesign/plugins/morrisjs/morris.js");
@@ -75675,6 +75672,8 @@ try {
 
 
   __webpack_require__(/*! adminbsb-materialdesign/js/demo.js */ "./node_modules/adminbsb-materialdesign/js/demo.js");
+
+  window.Popper = __webpack_require__(/*! popper.js */ "./node_modules/popper.js/dist/esm/popper.js").default;
 } catch (e) {}
 /**
  * We'll load the axios HTTP library which allows us to easily issue requests

@@ -109,7 +109,7 @@
                             </ul>
                         </div>
                         <div class="body">
-                          <div id="myfirstchart" style="height: 250px;">aa</div>
+                        
 
                         </div>
                     </div>

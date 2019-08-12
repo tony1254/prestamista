@@ -242,7 +242,7 @@
                 </a>
                 <ul class="ml-menu">
                     <li>
-                        <a href="../../../pages/charts/morris.html">Morris</a>
+                        
                     </li>
                     <li>
                         <a href="../../../pages/charts/flot.html">Flot</a>
